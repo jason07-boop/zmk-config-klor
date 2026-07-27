@@ -4,7 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "klor_common.dtsi"
+/* 
+ * #include "klor_common.dtsi"
+ */
 
 / {
 	chosen {
