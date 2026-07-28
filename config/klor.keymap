@@ -410,10 +410,10 @@
 
         BUTTON {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)   &kp LC(Y)                        &kp LC(Y)  &kp LC(V)       &kp LC(C)  &kp LC(X)     &kp LC(Z)
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &kp LC(A)                        &kp LC(A)  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN
+&kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)   &kp LC(Y)                        &kp LC(Y)  &kp LC(V)       &kp LC(C)  &kp LC(X)     &kp LC(Z)
+                               &mkp MB3    &mkp MB1   &mkp MB2    &mkp MB2  &mkp MB1   &mkp MB3
             >;
         };
 
