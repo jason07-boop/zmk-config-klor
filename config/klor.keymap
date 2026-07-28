@@ -14,10 +14,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &mmv {
     delay-ms = <0>;
@@ -38,49 +36,49 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_GAME";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 2>;
+            bindings = <&none>, <&to 0>;
         };
 
         u_to_U_nav: u_to_U_nav {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_NAV";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 4>;
+            bindings = <&none>, <&to 2>;
         };
 
         u_to_U_num: u_to_U_num {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_NUM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 7>;
+            bindings = <&none>, <&to 5>;
         };
 
         u_to_U_media: u_to_U_media {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_MEDIA";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 5>;
+            bindings = <&none>, <&to 3>;
         };
 
         u_to_U_fun: u_to_U_fun {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_FUN";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 9>;
+            bindings = <&none>, <&to 7>;
         };
 
         u_to_U_mouse: u_to_U_mouse {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_MOUSE";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 6>;
+            bindings = <&none>, <&to 4>;
         };
 
         u_to_U_sym: u_to_U_sym {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_SYM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 8>;
+            bindings = <&none>, <&to 6>;
         };
 
         u_bootloader: u_bootloader {
@@ -157,7 +155,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_EXTRA";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 1>;
+            bindings = <&none>, <&to 0>;
         };
 
         home_row_mod_left: home_row_mod_left {
@@ -192,7 +190,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_BUTTON";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 3>;
+            bindings = <&none>, <&to 0>;
         };
 
         auto_shift: auto_shift {
@@ -367,7 +365,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        base_layer {
+        BASE {
             // ┌─────────────────────────────────────────────────┐
 
             label = "BASE";
@@ -384,92 +382,87 @@
                        └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘ */
 
             bindings = <
-&kp Q  &kp W  &kp F  &kp P        &kp G      &kp J      &kp L        &kp U      &kp Y     &kp SEMI
-&kp A  &kp R  &kp S  &hm LSHFT T  &kp D      &kp H      &hm RSHFT N  &kp E      &kp I     &kp O
-&kp Z  &kp X  &kp C  &kp V        &kp B      &kp K      &kp M        &kp COMMA  &kp DOT   &kp FSLH
-                     &kp LCTRL    &mo LOWER  &kp SPACE  &kp RET      &mo RAISE  &kp BSPC
+&kp V                          &kp L                      &kp H                       &kp G                       &kp K      &kp Q      &kp F                        &kp O                        &kp U                          &kp J
+&home_row_mod_left LEFT_GUI S  &home_row_mod_left LALT R  &home_row_mod_left LCTRL N  &home_row_mod_left LSHFT T  &kp B      &kp Y      &home_row_mod_right LSHFT C  &home_row_mod_right LCTRL A  &home_row_mod_right LALT E     &home_row_mod_right LEFT_GUI I
+&kp Z                          &home_row_mod_left RALT X  &kp M                       &kp D                       &kp P      &kp SQT    &kp W                        &kp DOT                      &home_row_mod_right RALT SEMI  &kp COMMA
+                                                                                      &lt 5 ESC                   &lt 4 RET  &lt 6 TAB  &lt 7 SPACE                  &lt 8 BACKSPACE              &lt 9 DEL
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        lower_layer {
-            // ┌─────────────────────────────────────────────────┐
-
-            label = "LOWER";
-
-            // └─────────────────────────────────────────────────┘
-            /* ┌─────────┬─────────┬─────────┬─────────┬─────────┐┌─────────┬─────────┬─────────┬─────────┬─────────┐
-   │         │         │    UP   │         │    {    ││    }    │    7    │    8    │    9    │    +    │
-   ┌─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │   LEFT  │  DOWN   │  RIGHT  │    [    ││    ]    │    4    │    5    │    6    │    -    │
-   ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │   P UP  │ C LOCK  │ P DOWN  │    (    ││    )    │    1    │    2    │    3    │    *    │
-   └─────────┴─────────┼─────────┼─────────┼─────────┼┼─────────┼─────────┼─────────┼─────────┴─────────┘
-                       │         │         │         ││         │    0    │         │  
-                       └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘ */
-
+        EXTRA {
+            label = "EXTRA";
             bindings = <
-&ext_power EP_TOG  &trans     &kp UP    &trans     &kp LBRC  &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-&rgb_ug RGB_EFF    &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT  &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans             &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR  &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY
-                                        &trans     &trans    &trans    &trans     &kp KP_N0  &trans
+&kp Q                          &kp W                      &kp E                       &kp R                       &kp T    &kp Y    &kp U                        &kp I                        &kp O                          &kp P
+&home_row_mod_left LEFT_GUI A  &home_row_mod_left LALT S  &home_row_mod_left LCTRL D  &home_row_mod_left LSHFT F  &kp G    &kp H    &home_row_mod_right LSHFT J  &home_row_mod_right LCTRL K  &home_row_mod_right LALT L     &home_row_mod_right LEFT_GUI SQT
+&kp Z                          &home_row_mod_left RALT X  &kp C                       &kp V                       &kp B    &kp N    &kp M                        &kp COMMA                    &home_row_mod_right RALT SEMI  &kp FSLH
+                                                                                      &kp ESC                     &kp RET  &kp TAB  &kp SPACE                    &kp BSPC                     &kp DEL
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        raise_layer {
-            // ┌─────────────────────────────────────────────────┐
-
-            label = "RAISE";
-
-            // └─────────────────────────────────────────────────┘
-            /* ┌─────────┬─────────┬─────────┬─────────┬─────────┐┌─────────┬─────────┬─────────┬─────────┬─────────┐
-   │         │         │         │         │         ││         │         │    Ü    │         │         │
-   ┌─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │    ß    │         │         │         ││         │         │         │         │    Ö    │
-   ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         ││         │         │         │         │         │
-   └─────────┴─────────┼─────────┼─────────┼─────────┼┼─────────┼─────────┼─────────┼─────────┴─────────┘
-                       │ ADJUST  │         │         ││         │         │         │  
-                       └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
-
+        GAME {
             bindings = <
-&trans  &trans     &trans  &trans      &trans  &trans  &trans  &kp RA(U)  &trans  &trans
-&trans  &kp RA(S)  &trans  &trans      &trans  &trans  &trans  &trans     &trans  &kp RA(O)
-&trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans     &trans  &trans
-                           &mo ADJUST  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        adjust_layer {
-            // ┌─────────────────────────────────────────────────┐
-
-            label = "ADJUST";
-
-            // └─────────────────────────────────────────────────┘
-            /* ┌─────────┬─────────┬─────────┬─────────┬─────────┐┌─────────┬─────────┬─────────┬─────────┬─────────┐
-   │         │         │         │         │         ││         │         │         │         │         │
-   ┌─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │         │         │         │         ││         │         │         │         │         │
-   ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         ││         │         │         │         │         │
-   └─────────┴─────────┼─────────┼─────────┼─────────┼┼─────────┼─────────┼─────────┼─────────┴─────────┘
-                       │         │         │         ││         │         │         │  
-                       └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘ */
-
+        BUTTON {
             bindings = <
-&bt BT_CLR  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans      &bt BT_CLR
-&bt BT_NXT  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &bt BT_NXT  &trans
-&bt BT_PRV  &trans  &trans  &kp KP_N6  &trans  &bt BT_PRV  &trans  &trans  &trans      &trans
-                            &trans     &trans  &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_4 {
+        NAV {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        MEDIA {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        NUM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        SYM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        FUN {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
