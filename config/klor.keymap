@@ -19,11 +19,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define BASE   0
-#define LOWER  1
-#define RAISE  2
-#define ADJUST 3
-
 &mmv {
     delay-ms = <0>;
     time-to-max-speed-ms = <1500>;
