@@ -1,0 +1,58 @@
+// boards/shields/klor/klor-layouts.dtsi
+#include <zmk/physical_layouts.dtsi>
+
+/ {
+    // LEFT HALF PHYSICAL LAYOUT
+    klor_physical_layout_left: klor_physical_layout_left {
+        compatible = "zmk,physical-layout";
+        display-name = "Klor Left";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+        keys = <
+            /* Row 0 (Top) - Staggered */
+            <&key_physical_attrs 100 100 -380   0 0 0 0> <&key_physical_attrs 100 100 -250   0 0 0 0>
+            <&key_physical_attrs 100 100 -125   0 0 0 0> <&key_physical_attrs 100 100    0   0 0 0>
+            <&key_physical_attrs 100 100  125   0 0 0 0>
+            /* Row 1 */
+            <&key_physical_attrs 100 100 -380 100 0 0 0> <&key_physical_attrs 100 100 -250 100 0 0 0>
+            <&key_physical_attrs 100 100 -125 100 0 0 0> <&key_physical_attrs 100 100    0 100 0 0 0>
+            <&key_physical_attrs 100 100  125 100 0 0 0>
+            /* Row 2 */
+            <&key_physical_attrs 100 100 -380 200 0 0 0> <&key_physical_attrs 100 100 -250 200 0 0 0>
+            <&key_physical_attrs 100 100 -125 200 0 0 0> <&key_physical_attrs 100 100    0 200 0 0 0>
+            <&key_physical_attrs 100 100  125 200 0 0 0>
+            /* Row 3 (Thumbs) - Rotated 20 degrees */
+            <&key_physical_attrs 0 0 0 0 0 0 0> <&key_physical_attrs 0 0 0 0 0 0 0> /* Empty */
+            <&key_physical_attrs 100 100 -125 300 2000 0 0>
+            <&key_physical_attrs 100 100    0 300 2000 0 0>
+            <&key_physical_attrs 100 100  125 300 2000 0 0>
+        >;
+    };
+
+    // RIGHT HALF PHYSICAL LAYOUT (Mirrored)
+    klor_physical_layout_right: klor_physical_layout_right {
+        compatible = "zmk,physical-layout";
+        display-name = "Klor Right";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+        keys = <
+            /* Row 0 - Mirrored Stagger */
+            <&key_physical_attrs 100 100  125   0 0 0 0> <&key_physical_attrs 100 100    0   0 0 0 0>
+            <&key_physical_attrs 100 100 -125   0 0 0 0> <&key_physical_attrs 100 100 -250   0 0 0 0>
+            <&key_physical_attrs 100 100 -380   0 0 0 0>
+            /* Row 1 */
+            <&key_physical_attrs 100 100  125 100 0 0 0> <&key_physical_attrs 100 100    0 100 0 0 0>
+            <&key_physical_attrs 100 100 -125 100 0 0 0> <&key_physical_attrs 100 100 -250 100 0 0 0>
+            <&key_physical_attrs 100 100 -380 100 0 0 0>
+            /* Row 2 */
+            <&key_physical_attrs 100 100  125 200 0 0 0> <&key_physical_attrs 100 100    0 200 0 0 0>
+            <&key_physical_attrs 100 100 -125 200 0 0 0> <&key_physical_attrs 100 100 -250 200 0 0 0>
+            <&key_physical_attrs 100 100 -380 200 0 0 0>
+            /* Row 3 (Thumbs) - Rotated -20 degrees */
+            <&key_physical_attrs 100 100  125 300 -2000 0 0>
+            <&key_physical_attrs 100 100    0 300 -2000 0 0>
+            <&key_physical_attrs 100 100 -125 300 -2000 0 0>
+            <&key_physical_attrs 0 0 0 0 0 0 0> <&key_physical_attrs 0 0 0 0 0 0 0> /* Empty */
+        >;
+    };
+};   
