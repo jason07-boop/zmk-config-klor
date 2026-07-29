@@ -1,5 +1,4 @@
 #include "klor.dtsi"
-#include "klor-layouts.dtsi"
 
 / {
     chosen {
