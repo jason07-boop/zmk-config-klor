@@ -28,7 +28,8 @@
             <&key_physical_attrs 100 100  125 200 0 0 0>
             /* Row 3 (Thumbs) - Rotated 20 degrees */
             <&key_physical_attrs 0 0 0 0 0 0 0> 
-            <&key_physical_attrs 0 0 0 0 0 0 0> /* Empty */
+            <&key_physical_attrs 0 0 0 0 0 0 0> 
+            /* Empty */
             <&key_physical_attrs 100 100 -125 300 2000 0 0>
             <&key_physical_attrs 100 100    0 300 2000 0 0>
             <&key_physical_attrs 100 100  125 300 2000 0 0>
@@ -65,7 +66,8 @@
             <&key_physical_attrs 100 100    0 300 -2000 0 0>
             <&key_physical_attrs 100 100 -125 300 -2000 0 0>
             <&key_physical_attrs 0 0 0 0 0 0 0> 
-            <&key_physical_attrs 0 0 0 0 0 0 0> /* Empty */
+            <&key_physical_attrs 0 0 0 0 0 0 0> 
+            /* Empty */
         >;
     };
 };   
