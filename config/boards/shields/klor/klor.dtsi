@@ -1,20 +1,19 @@
 // boards/shields/klor/klor.dtsi
 
 / {
-    // No chosen block here; it will be defined in the overlays
+    // Define the kscan0 node HERE so it exists for overlays to modify
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row"; // Or "row2col" based on your wiring
+        wakeup-source;
+        
+        // Define SHARED row-gpios here
+        row-gpios
+            = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+        // Do NOT define col-gpios here (leave it for overlays)
+    };
 };
-
-&kscan0 {
-    compatible = "zmk,kscan-gpio-matrix";
-    diode-direction = "col2row"; // Verify this matches your wiring
-    wakeup-source;
-    
-    // SHARED ROW PINS (If both halves use the same pins for rows)
-    row-gpios
-        = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        ;
-    // col-gpios is NOT defined here
-};   
