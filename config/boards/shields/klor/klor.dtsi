@@ -1,5 +1,4 @@
 // boards/shields/klor/klor.dtsi
-#include <zmk/keys.dtsi>
 
 / {
     // No chosen block here; it will be defined in the overlays
