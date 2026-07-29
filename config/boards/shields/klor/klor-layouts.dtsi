@@ -1,5 +1,4 @@
 // boards/shields/klor/klor-layouts.dtsi
-#include <zmk/physical_layouts.dtsi>
 
 / {
     // LEFT HALF PHYSICAL LAYOUT
