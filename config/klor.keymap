@@ -448,28 +448,28 @@
 
         MOUSE {
             bindings = <
-&u_bootloader  &u_to_U_extra  &u_to_U_game  &u_to_U_base   &trans  &kp LC(Y)      &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
-&kp LGUI       &kp LALT       &kp LCTRL     &kp LSHFT      &trans  &u_bootloader  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&trans         &kp RALT       &u_to_U_sym   &u_to_U_mouse  &trans  &trans         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-                              &trans        &trans         &trans  &mkp MB2       &mkp MB1        &mkp MCLK
+&u_bootloader  &u_to_U_extra  &u_to_U_game  &u_to_U_base   &none  &kp LC(Y)      &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
+&kp LGUI       &kp LALT       &kp LCTRL     &kp LSHFT      &none  &u_bootloader  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none          &kp RALT       &u_to_U_sym   &u_to_U_mouse  &none  &none          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+                              &none         &none          &none  &mkp MB2       &mkp MB1        &mkp MCLK
             >;
         };
 
         NUM {
             bindings = <
-&kp CARET  &kp N7  &kp N8      &kp N9  &kp ASTERISK  &trans  &u_to_U_base  &u_to_U_game  &u_to_U_extra  &u_bootloader
-&kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL     &trans  &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI
-&kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH      &trans  &u_to_U_num   &u_to_U_nav   &kp RALT       &trans
-                   &kp PERIOD  &kp N0  &kp MINUS     &trans  &trans        &trans
+&kp CARET  &kp N7  &kp N8      &kp N9  &kp ASTERISK  &none  &u_to_U_base  &u_to_U_game  &u_to_U_extra  &u_bootloader
+&kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL     &none  &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI
+&kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH      &none  &u_to_U_num   &u_to_U_nav   &kp RALT       &none
+                   &kp PERIOD  &kp N0  &kp MINUS     &none  &none         &none
             >;
         };
 
         SYM {
             bindings = <
-&kp LEFT_BRACE  &kp AMPS         &kp ASTRK    &kp QMARK             &kp RIGHT_BRACE  &none  &u_to_U_base    &u_to_U_game   &u_to_U_extra  &u_bootloader
-&kp COLON       &kp DOLLAR       &kp PERCENT  &kp CARET             &kp PLUS  &none  &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT   &kp LEFT_GUI
-&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH              &kp PIPE  &none  &u_to_U_sym     &u_to_U_mouse  &kp RALT       &none
-                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER    &none  &none  &none
+&kp LEFT_BRACE  &kp AMPS         &kp ASTRK             &kp QMARK              &kp RIGHT_BRACE  &none       &u_to_U_base    &u_to_U_game   &u_to_U_extra  &u_bootloader
+&kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &none       &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT   &kp LEFT_GUI
+&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &caps_word  &u_to_U_sym     &u_to_U_mouse  &kp RALT       &none
+                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER        &none       &none           &none
             >;
         };
 
