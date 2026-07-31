@@ -478,7 +478,7 @@
 &kp F12  &kp F7  &kp F8     &kp F9     &kp PRINTSCREEN  &none  &u_to_U_base    &u_to_U_game   &u_to_U_extra  &u_bootloader
 &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK   &none  &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT   &kp LEFT_GUI
 &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK  &none  &u_to_U_fun     &u_to_U_media  &kp RALT       &none
-                 &kp K_APP  &kp SPACE  &kp TAB          &trans  &trans  &trans
+                 &kp K_APP  &kp SPACE  &kp TAB          &none  &none           &none
             >;
         };
     };
