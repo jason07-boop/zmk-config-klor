@@ -466,10 +466,10 @@
 
         SYM {
             bindings = <
-&kp LEFT_BRACE  &kp AMPS         &kp ASTRK             &kp QMARK              &kp RIGHT_BRACE  &none       &u_to_U_base    &u_to_U_game   &u_to_U_extra  &u_bootloader
-&kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &none       &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT   &kp LEFT_GUI
-&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &caps_word  &u_to_U_sym     &u_to_U_mouse  &kp RALT       &none
-                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER        &none       &none           &none
+&kp LEFT_BRACE  &kp AMPS         &kp ASTRK             &kp QMARK              &kp RIGHT_BRACE  &none  &u_to_U_base    &u_to_U_game   &u_to_U_extra  &u_bootloader
+&kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &none  &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT   &kp LEFT_GUI
+&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &none  &u_to_U_sym     &u_to_U_mouse  &kp RALT       &none
+                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER        &none  &none           &none
             >;
         };
 
