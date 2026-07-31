@@ -429,10 +429,10 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans
+&u_bootloader  &u_to_U_extra  &u_to_U_game  &u_to_U_base  &none       &kp LC(Y)     &kp LC(V)       &kp LC(C)       &kp LC(X)        &kp LC(Z)
+&kp LEFT_GUI   &kp LALT       &kp LCTRL     &kp LSHFT     &kp DELETE  &u_caps_word  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp HOME
+&none          &kp RALT       &u_to_U_num   &u_to_U_nav   &none       &kp INS       &kp PAGE_DOWN   &kp DOWN_ARROW  &kp PAGE_UP      &kp END
+                              &none         &none         &none       &kp RET       &kp BACKSPACE   &u_bootloader
             >;
         };
 
