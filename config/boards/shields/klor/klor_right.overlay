@@ -1,5 +1,9 @@
 #include "klor.dtsi"
 
+&default_transform {
+	col-offset = <5>;
+};
+
 &kscan0 {
     /* DEFINE RIGHT HALF COLUMN PINS HERE (Must match right PCB wiring) */
    col-gpios
@@ -9,7 +13,7 @@
 		, <&pro_micro 15 GPIO_ACTIVE_HIGH>
 		, <&pro_micro 18 GPIO_ACTIVE_HIGH>
 		;
-};   
+};
 
 &right_encoder {
 	status = "disabled";
