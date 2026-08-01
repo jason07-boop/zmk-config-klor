@@ -63,12 +63,12 @@ keys  //                     w   h    x     y    rot    rx    ry
 			, <&key_physical_attrs 100 100  1226  567   400  1226  567>
 			, <&key_physical_attrs 100 100  1320  641  1000  1320  641>
 
-			, <&key_physical_attrs 100 100   370  734   3000   370  734>
-			, <&key_physical_attrs 100 100   267  691   1500   267  691>
-			, <&key_physical_attrs 100 100   156  676      0   156  676>
-			, <&key_physical_attrs 100 100  1025  734  (-3000)  1025  734>
-			, <&key_physical_attrs 100 100  1128  691  (-1500)  1128  691>
-			, <&key_physical_attrs 100 100  1239  676      0  1239  676>
+			, <&key_physical_attrs 100 100   333  722   3000   333  722>
+			, <&key_physical_attrs 100 100   266  694   1500   266  694>
+			, <&key_physical_attrs 100 100   194  685      0   194  685>
+			, <&key_physical_attrs 100 100  1062  722  (-3000)  1062  722>
+			, <&key_physical_attrs 100 100  1129  694  (-1500)  1129  694>
+			, <&key_physical_attrs 100 100  1201  685      0  1201  685>
 			;
 	};
 };
