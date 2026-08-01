@@ -402,6 +402,7 @@
         };
 
         GAME {
+            label = "GAME";
             bindings = <
 &kp ESC    &kp Q  &kp C  &kp E      &kp R      &kp Y      &kp U     &kp I      &kp O    &kp P
 &kp LSHFT  &kp A  &kp W  &kp D      &kp F      &kp H      &kp J     &kp K      &kp L    &kp SEMI
@@ -411,6 +412,7 @@
         };
 
         GAME+ {
+            label = "GAME+";
             bindings = <
 &kp ESC  &kp N1  &kp N2     &kp N3  &none    &none  &kp F7  &kp F8  &kp F9  &kp F12
 &none    &kp N4  &kp N5     &kp N6  &kp M    &none  &kp F4  &kp F5  &kp F6  &kp F11
@@ -420,6 +422,7 @@
         };
 
         BUTTON {
+            label = "BUTTON";
             bindings = <
 &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)   &kp LC(Y)  &kp LC(Y)  &kp LC(V)  &kp LC(C)  &kp LC(X)     &kp LC(Z)
 &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &kp LC(A)  &kp LC(A)  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN
@@ -429,6 +432,7 @@
         };
 
         NAV {
+            label = "NAV";
             bindings = <
 &u_bootloader  &u_to_U_extra  &u_to_U_game  &u_to_U_base  &none       &kp LC(Y)     &kp LC(V)       &kp LC(C)       &kp LC(X)        &kp LC(Z)
 &kp LEFT_GUI   &kp LALT       &kp LCTRL     &kp LSHFT     &kp DELETE  &u_caps_word  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp HOME
@@ -438,6 +442,7 @@
         };
 
         MEDIA {
+            label = "MEDIA";
             bindings = <
 &u_bootloader  &u_to_U_extra  &u_to_U_game  &u_to_U_base   &none       &kp LG(TAB)        &kp LG(E)    &kp C_BRI_DN       &kp C_BRI_UP     &bt BT_CLR_ALL
 &kp LGUI       &kp LALT       &kp LCTRL     &kp LSHFT      &u_out_tog  &ext_power EP_TOG  &kp C_PREV   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT
@@ -447,6 +452,7 @@
         };
 
         MOUSE {
+            label = "MOUSE";
             bindings = <
 &u_bootloader  &u_to_U_extra  &u_to_U_game  &u_to_U_base   &none  &kp LC(Y)      &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
 &kp LGUI       &kp LALT       &kp LCTRL     &kp LSHFT      &none  &u_bootloader  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
@@ -456,6 +462,7 @@
         };
 
         NUM {
+            label = "NUM";
             bindings = <
 &kp CARET  &kp N7  &kp N8      &kp N9  &kp ASTERISK  &none  &u_to_U_base  &u_to_U_game  &u_to_U_extra  &u_bootloader
 &kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL     &none  &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI
@@ -465,6 +472,7 @@
         };
 
         SYM {
+            label = "SYM";
             bindings = <
 &kp LEFT_BRACE  &kp AMPS         &kp ASTRK             &kp QMARK              &kp RIGHT_BRACE  &none  &u_to_U_base    &u_to_U_game   &u_to_U_extra  &u_bootloader
 &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &none  &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT   &kp LEFT_GUI
@@ -474,6 +482,7 @@
         };
 
         FUN {
+            label = "FUN";
             bindings = <
 &kp F12  &kp F7  &kp F8     &kp F9     &kp PRINTSCREEN  &none  &u_to_U_base    &u_to_U_game   &u_to_U_extra  &u_bootloader
 &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK   &none  &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT   &kp LEFT_GUI
