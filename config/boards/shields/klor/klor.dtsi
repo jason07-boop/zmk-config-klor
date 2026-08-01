@@ -66,8 +66,8 @@ keys  //                     w   h    x     y    rot    rx    ry
 			, <&key_physical_attrs 100 100   370  734   3000   370  734>
 			, <&key_physical_attrs 100 100   267  691   1500   267  691>
 			, <&key_physical_attrs 100 100   156  676      0   156  676>
-			, <&key_physical_attrs 100 100  1025  734  -3000  1025  734>
-			, <&key_physical_attrs 100 100  1128  691  -1500  1128  691>
+			, <&key_physical_attrs 100 100  1025  734  (-3000)  1025  734>
+			, <&key_physical_attrs 100 100  1128  691  (-1500)  1128  691>
 			, <&key_physical_attrs 100 100  1239  676      0  1239  676>
 			;
 	};
