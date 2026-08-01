@@ -5,6 +5,7 @@
  */
 
 #include "klor_common.dtsi"
+#include <physical_layouts.dtsi>
 
 / {
 	chosen {
