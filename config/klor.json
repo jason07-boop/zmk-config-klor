@@ -1,9 +1,6 @@
 {
-  "id": "klor",
-  "name": "klor",
   "layouts": {
-    "default_layout": {
-      "name": "default_layout",
+    "KLOR": {
       "layout": [
         { "x": 0.0, "y": 1.31, "r": -10.0, "rx": 0.0, "ry": 1.31 },
         { "x": 1.15, "y": 0.55, "r": -4.0, "rx": 1.15, "ry": 0.55 },
@@ -43,6 +40,5 @@
         { "x": 8.92, "y": 3.62 }
       ]
     }
-  },
-  "sensors": []
+  }
 }
