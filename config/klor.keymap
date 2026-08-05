@@ -387,7 +387,7 @@
 &kp V                          &kp L                      &kp H                       &kp G                       &kp K            &kp Q       &kp F                        &kp O                        &kp U                          &kp J
 &home_row_mod_left LEFT_GUI S  &home_row_mod_left LALT R  &home_row_mod_left LCTRL N  &home_row_mod_left LSHFT T  &kp B            &kp Y       &home_row_mod_right LSHFT C  &home_row_mod_right LCTRL A  &home_row_mod_right LALT E     &home_row_mod_right LEFT_GUI I
 &lt 4 Z                        &home_row_mod_left RALT X  &kp M                       &kp D                       &kp P            &kp SQT     &kp W                        &kp DOT                      &home_row_mod_right RALT SEMI  &lt 4 COMMA
-&lt 6 ESC                      &lt 5 RET                  &lt 7 TAB                   &lt 8 SPACE                 &lt 9 BACKSPACE  &lt 10 DEL
+&lt 6 ESC                      &lt 5 RET                  &lt 7 TAB                   &lt 9 SPACE                 &lt 8 BACKSPACE  &lt 10 DEL
             >;
         };
 
