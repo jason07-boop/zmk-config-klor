@@ -38,49 +38,49 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_GAME";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 0>;
+            bindings = <&none>, <&to 2>;
         };
 
         u_to_U_nav: u_to_U_nav {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_NAV";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 2>;
+            bindings = <&none>, <&to 5>;
         };
 
         u_to_U_num: u_to_U_num {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_NUM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 6>;
+            bindings = <&none>, <&to 8>;
         };
 
         u_to_U_media: u_to_U_media {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_MEDIA";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 4>;
+            bindings = <&none>, <&to 6>;
         };
 
         u_to_U_fun: u_to_U_fun {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_FUN";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 8>;
+            bindings = <&none>, <&to 10>;
         };
 
         u_to_U_mouse: u_to_U_mouse {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_MOUSE";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 5>;
+            bindings = <&none>, <&to 7>;
         };
 
         u_to_U_sym: u_to_U_sym {
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_SYM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 7>;
+            bindings = <&none>, <&to 9>;
         };
 
         u_bootloader: u_bootloader {
@@ -157,7 +157,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_EXTRA";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 0>;
+            bindings = <&none>, <&to 1>;
         };
 
         home_row_mod_left: home_row_mod_left {
@@ -192,7 +192,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U_TO_U_BUTTON";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 0>;
+            bindings = <&none>, <&to 4>;
         };
 
         auto_shift: auto_shift {
@@ -404,10 +404,10 @@
         GAME {
             label = "GAME";
             bindings = <
-&kp ESC    &kp Q      &kp C      &kp E      &kp R     &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp LSHFT  &kp A      &kp W      &kp D      &kp F     &kp H      &kp J  &kp K      &kp L    &kp SEMI
-&kp LCTRL  &kp X      &kp S      &kp V      &kp G     &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&sl 3      &kp LCTRL  &kp SPACE  &kp ENTER  &kp BSPC  &kp MINUS
+&kp ESC    &kp Q      &kp C      &kp E      &kp R     &kp Y         &kp U  &kp I      &kp O    &kp P
+&kp LSHFT  &kp A      &kp W      &kp D      &kp F     &kp H         &kp J  &kp K      &kp L    &kp SEMI
+&kp LCTRL  &kp X      &kp S      &kp V      &kp G     &kp N         &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&sl 3      &kp LCTRL  &kp SPACE  &kp ENTER  &kp BSPC  &u_to_U_base
             >;
         };
 
