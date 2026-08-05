@@ -426,7 +426,7 @@
             bindings = <
 &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)   &kp LC(Y)  &kp LC(Y)  &kp LC(V)  &kp LC(C)  &kp LC(X)     &kp LC(Z)
 &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &kp LC(A)  &kp LC(A)  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN
-&none         &kp LC(X)     &kp LC(C)  &kp LC(V)   &kp BSLH   &kp BSLH   &kp LC(V)  &kp LC(C)  &kp LC(X)     &none
+&none         &kp LC(X)     &kp LC(C)  &kp LC(V)   &kp BSLH   &kp FSLH   &kp LC(V)  &kp LC(C)  &kp LC(X)     &none
 &mkp MB3      &mkp MB1      &mkp MB2   &mkp MB2    &mkp MB1   &mkp MB3
             >;
         };
@@ -488,6 +488,15 @@
 &kp F11    &kp F4     &kp F5   &kp F6  &kp SCROLLLOCK   &none  &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT   &kp LEFT_GUI
 &kp F10    &kp F1     &kp F2   &kp F3  &kp PAUSE_BREAK  &none  &u_to_U_fun     &u_to_U_media  &kp RALT       &none
 &kp K_APP  &kp SPACE  &kp TAB  &none   &none            &none
+            >;
+        };
+
+        layer_11 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
